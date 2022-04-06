@@ -1,10 +1,3 @@
-//
-//  FirstRowView.swift
-//  HomeWorkForLesson12Task1
-//
-//  Created by User on 5.04.22.
-//
-
 import UIKit
 
 class FirstRowView: UIView {
@@ -46,22 +39,22 @@ class FirstRowView: UIView {
         NSLayoutConstraint.activate([
             commaButton.leadingAnchor.constraint(equalTo: zeroButton.trailingAnchor, constant: 10),
             commaButton.bottomAnchor.constraint(equalTo: bottomAnchor),
-            commaButton.widthAnchor.constraint(equalTo: zeroButton.widthAnchor),
-            commaButton.heightAnchor.constraint(equalTo: zeroButton.heightAnchor)
+            commaButton.widthAnchor.constraint(equalToConstant: 81),
+            commaButton.heightAnchor.constraint(equalToConstant: 81)
         ])
         
         addSubview(equalsButton)
-        equalsButton.backgroundColor = .darkGray
+        equalsButton.backgroundColor = .orange
         equalsButton.layer.cornerRadius = 40
-        equalsButton.setTitle(",", for: .normal)
+        equalsButton.setTitle("=", for: .normal)
         
         equalsButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             equalsButton.leadingAnchor.constraint(equalTo: commaButton.trailingAnchor, constant: 10),
             equalsButton.bottomAnchor.constraint(equalTo: bottomAnchor),
-            equalsButton.widthAnchor.constraint(equalTo: zeroButton.widthAnchor),
-            equalsButton.heightAnchor.constraint(equalTo: zeroButton.heightAnchor)
+            equalsButton.widthAnchor.constraint(equalToConstant: 81),
+            equalsButton.heightAnchor.constraint(equalToConstant: 81)
         ])
         
 //        addSubview(plusButton)

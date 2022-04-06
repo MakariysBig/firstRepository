@@ -1,10 +1,3 @@
-//
-//  SecondRowView.swift
-//  HomeWorkForLesson12Task1
-//
-//  Created by User on 6.04.22.
-//
-
 import UIKit
 
 class SecondRowView: UIView {
@@ -52,7 +45,7 @@ class SecondRowView: UIView {
         addSubview(numberThreeButton)
         numberThreeButton.backgroundColor = .darkGray
         numberThreeButton.layer.cornerRadius = 40
-        numberThreeButton.setTitle(",", for: .normal)
+        numberThreeButton.setTitle("3", for: .normal)
         
         numberThreeButton.translatesAutoresizingMaskIntoConstraints = false
         
@@ -66,7 +59,7 @@ class SecondRowView: UIView {
         addSubview(plusButton)
         plusButton.backgroundColor = .orange
         plusButton.layer.cornerRadius = 40
-        plusButton.setTitle(",", for: .normal)
+        plusButton.setTitle("+", for: .normal)
         
         plusButton.translatesAutoresizingMaskIntoConstraints = false
         

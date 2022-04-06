@@ -11,6 +11,10 @@ class MainView: UIView {
 
     let firstRowView = FirstRowView()
     let secondRowView = SecondRowView()
+    let thirdRowView = ThirdRowView()
+    let fourthRowView = FourthRowView()
+    let fifthRowView = FifthRowView()
+    
     
     init() {
         super.init(frame: .zero)
@@ -30,6 +34,16 @@ class MainView: UIView {
         ])
         
         addSubview(secondRowView)
+        secondRowView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            secondRowView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            secondRowView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            secondRowView.bottomAnchor.constraint(equalTo: firstRowView.topAnchor, constant: -10),
+            secondRowView.heightAnchor.constraint(equalToConstant: 81)
+        ])
+        
+        addSubview(thirdRowView)
         secondRowView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
