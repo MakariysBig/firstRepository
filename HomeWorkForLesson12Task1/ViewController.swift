@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             mainView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             mainView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             mainView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
-            mainView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100)
+            mainView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80)
         ])
     }
 

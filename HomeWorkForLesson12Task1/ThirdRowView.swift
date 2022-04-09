@@ -31,7 +31,7 @@ class ThirdRowView: UIView {
         addSubview(numberFiveButton)
         numberFiveButton.backgroundColor = .darkGray
         numberFiveButton.layer.cornerRadius = 40
-        numberFiveButton.setTitle("2", for: .normal)
+        numberFiveButton.setTitle("5", for: .normal)
         
         numberFiveButton.translatesAutoresizingMaskIntoConstraints = false
         
@@ -45,12 +45,12 @@ class ThirdRowView: UIView {
         addSubview(numberSixButton)
         numberSixButton.backgroundColor = .darkGray
         numberSixButton.layer.cornerRadius = 40
-        numberSixButton.setTitle("3", for: .normal)
+        numberSixButton.setTitle("6", for: .normal)
         
         numberSixButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            numberSixButton.leadingAnchor.constraint(equalTo: numberFourButton.trailingAnchor, constant: 10),
+            numberSixButton.leadingAnchor.constraint(equalTo: numberFiveButton.trailingAnchor, constant: 10),
             numberSixButton.bottomAnchor.constraint(equalTo: bottomAnchor),
             numberSixButton.widthAnchor.constraint(equalTo: numberFourButton.widthAnchor),
             numberSixButton.heightAnchor.constraint(equalTo: numberFourButton.heightAnchor)
@@ -64,7 +64,7 @@ class ThirdRowView: UIView {
         minusButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            minusButton.leadingAnchor.constraint(equalTo: numberFourButton.trailingAnchor, constant: 10),
+            minusButton.leadingAnchor.constraint(equalTo: numberSixButton.trailingAnchor, constant: 10),
             minusButton.bottomAnchor.constraint(equalTo: bottomAnchor),
             minusButton.widthAnchor.constraint(equalTo: numberFourButton.widthAnchor),
             minusButton.heightAnchor.constraint(equalTo: numberFourButton.heightAnchor)

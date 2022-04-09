@@ -56,20 +56,6 @@ class FirstRowView: UIView {
             equalsButton.widthAnchor.constraint(equalToConstant: 81),
             equalsButton.heightAnchor.constraint(equalToConstant: 81)
         ])
-        
-//        addSubview(plusButton)
-//        plusButton.backgroundColor = .systemGray
-//        plusButton.layer.cornerRadius = 40
-//        plusButton.setTitle(",", for: .normal)
-//
-//        plusButton.translatesAutoresizingMaskIntoConstraints = false
-//
-//        NSLayoutConstraint.activate([
-//            plusButton.leadingAnchor.constraint(equalTo: equalsButton.trailingAnchor, constant: 10),
-//            plusButton.bottomAnchor.constraint(equalTo: bottomAnchor),
-//            plusButton.widthAnchor.constraint(equalTo: zeroButton.widthAnchor),
-//            plusButton.heightAnchor.constraint(equalTo: zeroButton.heightAnchor)
-//        ])
     }
 
     required init?(coder: NSCoder) {

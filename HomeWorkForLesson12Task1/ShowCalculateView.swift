@@ -11,6 +11,8 @@ class ShowCalculateView: UIView {
 
     init() {
         super.init(frame: .zero)
+        backgroundColor = .red
+    
     }
     
     required init?(coder: NSCoder) {
